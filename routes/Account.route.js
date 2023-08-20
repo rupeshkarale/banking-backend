@@ -9,7 +9,7 @@ AccountRouter.get("/gettransection/:id", async (req, res) => {
      console.log(Id)
 
      try {
-          const transaction = await AccountModel.find({ trasactionBy: Id })
+          const transaction = await AccountModel.find({ trasectionBy: Id })
           return res.status(200).send(transaction)
      }
      catch {
