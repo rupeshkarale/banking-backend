@@ -16,10 +16,5 @@ const Authenticate = (req, res, next) => {
     } else {
         res.status(400).send("please login")
     }
-
-
-
-
-
 }
 module.exports = Authenticate;
